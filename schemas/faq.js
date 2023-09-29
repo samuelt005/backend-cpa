@@ -1,17 +1,17 @@
 export default {
-    name: 'pet',
+    name: 'faq',
     type: 'document',
-    title: 'Pet',
+    title: 'FAQ',
     fields: [
         {
-            name: 'name',
+            name: 'pergunta',
             type: 'string',
-            title: 'Name'
+            title: 'Pergunta'
         },
         {
-            name: 'raca',
+            name: 'resposta',
             type: 'string',
-            title: 'Raça'
+            title: 'Resposta'
         }
     ]
 }
