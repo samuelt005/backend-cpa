@@ -5,7 +5,7 @@ export default {
     fields: [
         {
             name: 'destaque',
-            type: 'string',
+            type: 'boolean',
             title: 'Destaque'
         },
         {

@@ -12,6 +12,15 @@ export default {
             name: 'texto',
             type: 'string',
             title: 'Texto'
+        },
+        {
+            name: 'itens',
+            type: 'array',
+            title: 'Itens',
+            of: [{type: 'string'}],
+            options: {
+                layout: 'list'
+              }
         }
     ]
 }
