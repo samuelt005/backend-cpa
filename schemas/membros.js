@@ -24,6 +24,16 @@ export default {
             title: 'Cargo'
         },
         {
+            name: 'subtitulo',
+            type: 'string',
+            title: 'Sub-Título'
+        },
+        {
+            name: 'titulo',
+            type: 'string',
+            title: 'Título'
+        },
+        {
             name: 'bio',
             type: 'string',
             title: 'Bio'
