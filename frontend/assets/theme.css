@@ -1,0 +1,1479 @@
+@import url('https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap');
+
+html {
+    zoom: var(--rzf, 1);
+    font-size: max(calc(min(var(--1vw, 1vw), 13.66px) * var(--rfso, 1)), var(--minfs, 0px));
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: calc(1rem * var(--bfso, 1));
+    overflow-x: hidden;
+}
+
+.LinkARodape:hover {
+    transition: 600ms ease-in-out;
+    opacity: 0.8;
+}
+
+.LinkARodape {
+    transition: 0.3s ease-out;
+}
+
+.BodyMain {
+    background-color: #cacaca;
+    margin: 0;
+    padding: 0;
+}
+
+.DivMain {
+    background-color: #e2e2e2;
+}
+
+.NavDiv {
+    background-color: #f5f5f5;
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+}
+
+.NavMain {
+    display: flex;
+    padding: 1em;
+    background-color: #ffffff;
+    padding-left: 3em;
+    padding-right: 3em;
+}
+
+.NavLogo {
+    width: 40%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.NavItens {
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.NavItensLi {
+    font-weight: 700;
+    display: inline-block;
+    font-size: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.NavLinkItens {
+    padding-left: 1em;
+    text-decoration-line: none;
+    color: #2a363f;
+    transition: 700ms ease-out;
+}
+
+.NavLinkItens:hover {
+    color: #EB0045;
+    transition: ease-in-out 200ms;
+}
+
+.PageSelected {
+    color: #EB0045;
+}
+
+.Linhas {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.Linha1 {
+    height: 2px;
+    width: 65%;
+    border: #2a363f 2px solid;
+}
+
+.Linha2 {
+    height: 2px;
+    width: 35%;
+    border: #EB0045 2px solid;
+}
+
+.LinksRodape {
+    display: flex;
+    background-color: #EB0045;
+    padding: 2em;
+    border-top: #ffffff 2px solid;
+    border-bottom: #ffffff 2px solid;
+    color: #e2e2e2;
+    column-gap: 10%;
+    justify-content: center;
+}
+
+.ContatoRodape {
+    padding-top: 100px;
+    padding-bottom: 70px;
+    width: auto;
+    height: auto;
+    color: #fafafa;
+    background-color: #2a363f;
+}
+
+.ContatoRodapeContainer {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    min-height: 30px;
+    max-width: 1290px;
+    width: 100%;
+    height: 100%;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.ContatoRodapeChamada1 {
+    max-width: 600px;
+}
+
+.ContatoRodapeChamada1Texto {
+    margin-bottom: 15px;
+    font-size: 36px;
+    line-height: 1.25;
+    font-weight: 600;
+    letter-spacing: -0.1rem;
+}
+
+.ContatoRodapeContainerDivisoria {
+    margin-top: 50px;
+    margin-bottom: 70px;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(164, 174, 198, 0.2);
+}
+
+.ContatoRodapeContainerInformacoes {
+    width: 100%;
+    display: flex;
+    column-gap: 50px;
+    line-height: 1.25;
+    font-weight: 500;
+    letter-spacing: -0.1rem;
+}
+
+.ContatoRodapeContainerInformacoesColuna {
+    width: 100%;
+}
+
+.LogoFooter {
+    width: 60%;
+    margin-bottom: 20px;
+}
+
+.LogoFooterImg {
+    width: 100%;
+}
+
+.ContatoRodapeContainerInformacoesColunaTitulo {
+    margin-bottom: 10px;
+    font-size: 19px;
+}
+
+.ContatoRodapeContainerInformacoesColunaEndereco {
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.ContatoRodapeContainerInformacoesColunaContato {
+    font-weight: 400;
+}
+
+.itemlinkimg {
+    width: 30px;
+    height: 30px;
+}
+
+
+/*CONTEUDO DA HOME*/
+
+.ConteudoDivMain {
+    background-color: #fafafa;
+}
+
+.CapaCPA {
+    max-height: 750px;
+    background-image: url("./images/background/bg-home.png");
+    display: flex;
+}
+
+.ItemCapaCPA {
+    width: 50%;
+    height: 100%;
+}
+
+.ItemImgLogoCPA {
+    height: 2%;
+}
+
+.ImgLogoCPA {
+    width: 40%;
+}
+
+.TituloBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 2em;
+    padding-top: 2.5em;
+    font-weight: 700;
+    font-size: 3rem;
+    color: #2a363f;
+    transition: color 0.3s ease-out;
+    width: 100%;
+    height: 100%;
+}
+
+.SubConteudo {
+    font-size: 1.7rem;
+    font-weight: normal;
+    padding-right: 2em;
+    padding-left: 0.5em;
+}
+
+
+.ItemImgCapaCPA {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.ImgCapaCPA {
+    width: 100%;
+    height: 100%;
+    margin-left: -50px;
+}
+
+.ConteudoTexto {
+    width: 100%;
+    height: 750px;
+    max-height: 750px;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5em;
+}
+
+.DivConteudoTexto {
+    width: 100%;
+    height: 100%;
+    border: #2a363f 1px solid;
+}
+
+.Section2 {
+    width: 100%;
+    height: 100%;
+    min-height: 30px;
+    max-width: 1290px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.ConteudoCards {
+    padding-top: 140px;
+    padding-bottom: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.TextConteudo {
+    max-width: 660px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+.SubTituloCards {
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: #aab0bc;
+}
+
+.TituloCards {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 44px;
+    font-weight: 600;
+    color: #343f52;
+    margin-bottom: 15px;
+}
+
+.TabsConteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.Card {
+    display: flex;
+    column-gap: 20px;
+    row-gap: 20px;
+    padding: 30px;
+    width: 33.33%;
+    min-height: 40vh;
+    height: auto;
+    border-radius: 8px;
+    transition: 3s00ms ease-out;
+}
+
+.Card:hover {
+    box-shadow:
+        5px 10px 43px -31px rgba(0, 0, 0, 0.27);
+    transition: ease-in-out 200ms;
+    background-color: #ffffff;
+}
+
+.NumeroCard {
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 1;
+    background-image: linear-gradient(100deg, #eb0045 20%, #343f52);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.TextoTituloCard {
+    font-size: 21px;
+    line-height: 1.4;
+    font-weight: 700;
+    letter-spacing: -0.01rem;
+    color: #343f52;
+}
+
+.TextoConteudoCard {
+    font-size: 17px;
+    line-height: 1.7;
+    font-weight: 400;
+}
+
+.ConteudoObjetivo {
+    display: flex;
+    column-gap: 70px;
+    align-items: start;
+    margin-top: 75px;
+}
+
+.ConteudoObjetivoImg {
+    background-color: #ffffff;
+    border-radius: 8px;
+    width: 50%;
+    box-shadow:
+        5px 10px 43px -31px rgba(0, 0, 0, 0.27);
+}
+
+.ImgObjetivo {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+.ConteudoObjetivoTexto {
+    width: 50%;
+}
+
+.ConteudoObjetivoTextoTitulo {
+    margin-bottom: 15px;
+    font-size: 26px;
+    line-height: 1.35;
+    font-weight: 600;
+}
+
+.ConteudoObjetivoTextoConteudo {
+    margin-bottom: 25px;
+    font-size: 17px;
+    line-height: 1.7;
+    font-weight: 400;
+}
+
+.ConteudoObjetivoTextoLista {
+    margin-bottom: 30px;
+}
+
+.ConteudoObjetivoTextoListaItem {
+    display: flex;
+}
+
+.bolinha {
+    margin-top: 7px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #EB0045;
+    font-size: 15px;
+    line-height: 1;
+}
+
+.ConteudoObjetivoTextoListaItemTopicos {
+    padding-left: 1em;
+}
+
+
+.Section3 {
+    width: 100%;
+    height: 100%;
+    min-height: 30px;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("./images/background/section-pontos-positivos.png");
+}
+
+.ConteudoPontos {
+    max-width: 1290px;
+    width: 100%;
+    padding-top: 140px;
+    padding-bottom: 140px;
+    display: flex;
+    column-gap: 70px;
+}
+
+.ConteudoPontosImgs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    align-items: center;
+    justify-content: center;
+}
+
+.ConteudoPontosImgsImage1 {
+    padding-left: 25px;
+    padding-right: 25px;
+    width: 100%;
+    height: auto;
+}
+
+.ConteudoPontosImgsImage23 {
+    display: flex;
+    column-gap: 10%;
+    justify-content: center;
+}
+
+.ConteudoPontosImgsImage2 {
+    width: 40%;
+}
+
+.ConteudoPontosImgsImage3 {
+    width: 40%;
+}
+
+.Image1 {
+    max-width: 100%;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow:
+        5px 10px 43px -31px rgba(0, 0, 0, 0.27);
+}
+
+.Image2 {
+    max-width: 100%;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow:
+        5px 10px 43px -31px rgba(0, 0, 0, 0.27);
+}
+
+.Image3 {
+    max-width: 100%;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow:
+        5px 10px 43px -31px rgba(0, 0, 0, 0.27);
+}
+
+.ConteudoPontosTextoSubT {
+    font-size: 16px;
+    font-weight: 600;
+    color: #aab0bc;
+    margin-bottom: 10px;
+}
+
+.ConteudoPontosTextoTit {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.TOPICO {
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    column-gap: 10%;
+    margin-bottom: 30px;
+}
+
+.ConteudoPontosTextoTopicosItem {
+    width: 40%;
+}
+
+.ConteudoPontosTextoTopicosItemCon {
+    font-size: 16px;
+    font-weight: 400;
+    color: #2a363fb0;
+}
+
+/*FIM DO CONTEUDO DA HOME*/
+
+
+/*TERMOS E REGULAMENTAÇÕES*/
+.tabcontent {
+    text-align: justify;
+}
+
+.container {
+    max-width: 1440px;
+    width: 71%;
+    height: 100%;
+    margin-top: -200px;
+    top: 50%;
+    position: absolute;
+    left: 15%;
+    font-family: 'Lexend Deca', sans-serif;
+
+}
+
+.main-menu {
+    width: 100%;
+    display: flex;
+    list-style: none;
+    margin: auto 0;
+    padding: 0.6em 0 0 0;
+}
+
+.main-menu>li {
+    box-sizing: border-box;
+    height: var(--menu-item-size);
+    line-height: var(--menu-item-size);
+    padding: 0 2em;
+    margin: 1px;
+    transition: 0.5s linear all;
+    background: var(--green-color);
+    color: var(--dark-green-color);
+    cursor: pointer;
+    font-size: 16px;
+    user-select: none;
+}
+
+.main-menu>li:not(.with-submenu) {
+    clip-path: polygon(10% 0%, 0% 100%, 95% 100%, 100% 50%, 95% 0%);
+    shape-outside: polygon(10% 0%, 0% 100%, 95% 100%, 100% 50%, 95% 0%);
+}
+
+.main-menu>li:nth-child(2) {
+    transform: translateX(-4%);
+}
+
+.main-menu>li:nth-child(3) {
+    transform: translateX(-7%)
+}
+
+.main-menu>li:nth-child(4) {
+    transform: translateX(-12%)
+}
+
+.main-menu i {
+    margin-right: 5px;
+}
+
+.main-menu>li:hover:not(.active) {
+    background: linear-gradient(to right, var(--green-color), var(--blue-color));
+    color: var(--white-color);
+}
+
+.main-menu>li:active:not(.active) {
+    background: var(--blue-color);
+    color: var(--white-color);
+}
+
+.main-menu>li:hover i:not(li.active) {
+    color: #ffffff;
+}
+
+.main-menu .active {
+    color: var(--white-color);
+    background: var(--blue-color);
+    cursor: default;
+    text-shadow: 1px 1px 1px var(--dark-green-color);
+    font-size: 18px;
+}
+
+.content {
+    padding: 0 0 0 3em;
+    font-size: 16px;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    list-style: none;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    min-width: calc(3.5 * var(--menu-item-size) - 5%);
+    box-shadow: 5px 5px 5px #CCC;
+}
+
+.with-submenu {
+    position: relative;
+    display: inline-block;
+    clip-path: polygon(10% 0%, 0% 100%, 0% 500%, 95% 500%, 95% 100%, 100% 50%, 95% 0%);
+    shape-outside: polygon(10% 0%, 0% 100%, 95% 100%, 100% 50%, 95% 0%);
+}
+
+.with-submenu:hover .submenu {
+    display: block;
+}
+
+.submenu>li {
+    background: #dedede;
+    border-bottom: 1px solid var(--gray-color);
+    color: #777;
+    padding: 1.2em 1em;
+    transition: 0.3s all linear;
+    display: block;
+    line-height: 0%;
+}
+
+.submenu>li:hover {
+    background: var(--gray-color)
+}
+
+.submenu>li:active {
+    background: var(--white-color);
+}
+
+/*FIM DOS TERMOS E REGULAMENTAÇÕES*/
+
+/*COMISSÃO AVALIADORA*/
+
+
+.participantes {
+    display: flex;
+    column-gap: 20px;
+    justify-content: center;
+}
+
+.Colunm-2 {
+    max-width: 40%;
+    margin-top: 50px;
+}
+
+.ConteudoComissao {
+    max-width: 1440px;
+    width: 100%;
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: #f1f1f1;
+    background-image: url("./images/background/section-comissao.png");
+    text-align: justify;
+}
+
+.ComissaoSection1 {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 64px;
+    padding-bottom: 100px;
+}
+
+.ComissaoSection1Conteudo {
+    display: flex;
+    column-gap: 10px;
+    width: 100%;
+    justify-content: center;
+}
+
+.ComissaoSection1ConteudoDireita {
+    min-width: 50%;
+}
+
+.ComissaoSection1ConteudoDireitaTit {
+    font-size: 44px;
+    font-weight: 600;
+    color: #343f52;
+    margin-bottom: 15px;
+}
+
+.ComissaoSection1ConteudoEsquerda {
+    font-size: 1.7rem;
+    color: #777;
+}
+
+.ComissaoSection1Diretor {
+    display: flex;
+    width: 100%;
+    column-gap: 104px;
+}
+
+.ComissaoSection1DiretorConteudoLista {
+    padding-top: 50px;
+}
+
+.ComissaoSection1DiretorImg {
+    min-width: 43%;
+    margin-top: 30px;
+}
+
+.ComissaoSection1DiretorConteudoTit {
+    font-size: 30px;
+}
+
+.ComissaoSection1DiretorConteudoSub {
+    font-size: 1.5rem;
+}
+
+.ComissaoSection1DiretorConteudoItens {
+    margin-top: 16px;
+    padding: 16px;
+    padding-bottom: 25px;
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+    font-size: 14px;
+    line-height: 1.2;
+    background-color: #f9f9fb;
+}
+
+.ItensIcon {
+    min-width: 56px;
+    min-height: 56px;
+    width: 56px;
+    height: 56px;
+    color: #EB0045;
+    background-color: #ffffff;
+    border: 1px solid #ebebef;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ItensTitulo {
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+
+.ItensConteudo {
+    color: #606476;
+}
+
+.ComissaoSection2 {
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #f9f9fb;
+}
+
+.ComissaoSection2Conteudo {
+    max-width: 100%;
+    width: 100%;
+}
+
+.ComissaoSection2ConteudoTitulo {
+    margin-bottom: 72px;
+}
+
+.ComissaoSection2ConteudoIntegrantes {
+    width: 100%;
+    display: flex;
+    column-gap: 64px;
+    justify-content: center;
+    align-items: center;
+}
+
+figure.snip1113 {
+    font-family: 'Raleway', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    max-width: 100%;
+    width: 100%;
+    background: #f9f9fb;
+    text-align: center;
+}
+
+figure.snip1113 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+figure.snip1113 img {
+    max-width: 65%;
+    margin: 40px auto;
+    display: block;
+    position: relative;
+    border: 3px solid #666666;
+    padding: 15px 15px 85px 15px;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+
+figure.snip1113 figcaption {
+    position: absolute;
+    height: 120px;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    display: block;
+}
+
+figure.snip1113 h3 {
+    background-color: #f9f9fb;
+    color: #000000;
+    font-size: 20px;
+    width: 100%;
+    padding: 5px 12px;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+figure.snip1113 h3 span {
+    font-weight: 800;
+}
+
+figure.snip1113 h4 {
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    opacity: 0.6;
+    font-size: 11px;
+}
+
+figure.snip1113.blue img {
+    border-color: #2472a4;
+}
+
+figure.snip1113.blue h3,
+figure.snip1113.blue h4 {
+    color: #2472a4;
+}
+
+figure.snip1113.blue img:hover {
+    opacity: 0.9;
+}
+
+figure.snip1113 img:hover {
+    opacity: 0.9;
+}
+
+figure.snip1113.red img {
+    border-color: #EB0045;
+}
+
+figure.snip1113.red img:hover {
+    opacity: 0.8;
+}
+
+figure.snip1113.red h3,
+figure.snip1113.red h4 {
+    color: #EB0045;
+}
+
+figure.snip1113.blue img:hover {
+    opacity: 0.9;
+}
+
+figure.snip1113 img:hover {
+    opacity: 0.9;
+}
+
+figure.snip1113.red img {
+    border-color: #2b3c4e;
+}
+
+figure.snip1113.red img:hover {
+    opacity: 0.8;
+}
+
+figure.snip1113.red h3,
+figure.snip1113.red h4 {
+    color: #2b3c4e;
+}
+
+figure.snip1113.yellow img {
+    border-color: #EB0045;
+}
+
+figure.snip1113.yellow h3,
+figure.snip1113.yellow h4 {
+    color: #EB0045;
+}
+
+figure.snip1113.green img {
+    border-color: #229955;
+}
+
+figure.snip1113.green h3,
+figure.snip1113.green h4 {
+    color: #229955;
+}
+
+figure.snip1113.orange img {
+    border-color: #d67118;
+}
+
+figure.snip1113.orange h3,
+figure.snip1113.orange h4 {
+    color: #d67118;
+}
+
+figure.snip1113.navy img {
+    border-color: #2b3c4e;
+}
+
+figure.snip1113.navy h3,
+figure.snip1113.navy h4 {
+    color: #2b3c4e;
+}
+
+/*FIM DA COMISSÃO AVALIADORA*/
+
+
+/*FAQ*/
+.ImgFaqSection {
+    background-image: url("./images/background/section-faq.png");
+}
+
+.FaqSection1 {
+    padding-top: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.DivImage1Faq {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.ImageFaq {
+    max-width: 500px;
+    max-height: 500px;
+    width: 100%;
+    height: 100%;
+}
+
+.faq-section {
+    margin-top: -90px;
+}
+
+.faq-title h2 {
+    position: relative;
+    margin-bottom: 45px;
+    display: inline-block;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.faq-title h2::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 60px;
+    height: 2px;
+    background: #EB0045;
+    bottom: -25px;
+    margin-left: -30px;
+}
+
+.faq-title p {
+    padding: 0 190px;
+    margin-bottom: 10px;
+}
+
+.faq {
+    background: #FFFFFF;
+    box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.06);
+    border-radius: 4px;
+}
+
+.faq .card {
+    border: none;
+    background: none;
+    border-bottom: 1px dashed #CEE1F8;
+}
+
+.faq .card .card-header {
+    padding: 0px;
+    border: none;
+    background: none;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.faq .card .card-header:hover {
+    background: rgba(233, 30, 99, 0.1);
+    padding-left: 10px;
+}
+
+.faq .card .card-header .faq-title {
+    width: 100%;
+    text-align: left;
+    padding: 0px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #3B566E;
+    text-decoration: none !important;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.faq .card .card-header .faq-title .badge {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 14px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    text-align: center;
+    background: #EB0045;
+    color: #fff;
+    font-size: 12px;
+    margin-right: 20px;
+}
+
+.faq .card .card-body {
+    padding: 30px;
+    padding-left: 35px;
+    padding-bottom: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #6F8BA4;
+    line-height: 28px;
+    letter-spacing: 1px;
+    border-top: 1px solid #F3F8FF;
+}
+
+.faq .card .card-body p {
+    margin-bottom: 14px;
+}
+
+@media (max-width: 991px) {
+    .faq {
+        margin-bottom: 30px;
+    }
+
+    .faq .card .card-header .faq-title {
+        line-height: 26px;
+        margin-top: 10px;
+    }
+}
+
+/*FIM DO FAQ*/
+
+/*RESULTADOS*/
+
+.ResultadoSection {
+    background-image: url();
+    background-color: #f1f1f1;
+}
+
+.ComissaoSection1ConteudoDireitaTitResultado {
+    text-align: left;
+}
+
+.ComissaoSection1ConteudoEsquerdaResultado {
+    display: flex;
+    align-items: flex-end;
+}
+
+.ImagemResultado {
+    width: 100%;
+}
+
+.ComissaoSection1DiretorConteudoItensResultado {
+    flex-direction: column;
+}
+
+/*FIM DOS RESULTADOS*/
+.RodapeTermos {
+    margin-top: 50%;
+}
+
+@media only screen and (max-device-width: 1024px) {
+    .NavLogo {
+        width: 20%;
+    }
+
+    .NavItens {
+        width: 80%;
+    }
+
+    .CapaCPA {
+        padding-top: 50px;
+        padding-bottom: 140px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .TituloCards {
+        font-size: 30px;
+    }
+
+    .TituloHome,
+    .ItemCapa2,
+    .ConteudoObjetivoImg,
+    .ConteudoPontosImgs {
+        display: none;
+    }
+
+    .TextoConteudoCard {
+        text-align: justify;
+    }
+
+    .ItemCapa1 {
+        width: 100%;
+    }
+
+    .ItemImgLogoCPA {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .SubConteudo {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 600;
+        color: #343f52;
+    }
+
+    .TabsConteudo {
+        flex-direction: column;
+    }
+
+    .Card {
+        width: 50%;
+        min-height: 20vh;
+        transition: 700ms ease-out;
+    }
+
+    .TextoConteudoCard {
+        text-align: justify;
+    }
+
+    .ConteudoObjetivo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .ConteudoObjetivoTextoTitulo {
+        text-align: center;
+    }
+
+    .ConteudoObjetivoTextoConteudo {
+        text-align: justify;
+    }
+
+    .ConteudoObjetivoTextoListaItem {
+        text-align: left;
+    }
+
+    .Section3 {
+        background-image: url("");
+        padding-left: 5em;
+        padding-right: 5em;
+    }
+
+    .ConteudoPontosTexto {
+        display: flex;
+        flex-direction: column;
+        column-gap: 30px;
+    }
+
+    .ConteudoObjetivoTextoTitulo,
+    .ConteudoObjetivoTextoConteudo {
+        text-align: left;
+    }
+
+    .TOPICO {
+        justify-content: center;
+    }
+
+    /*TERMOS E REGULAMENTAÇÕES*/
+    .container {
+        margin-top: -30%;
+    }
+
+    .RodapeTermos>.LinksRodape {
+        position: relative;
+        margin-top: 70%;
+    }
+
+    /*TERMOS E REGULAMENTAÇÕES*/
+
+}
+
+
+@media only screen and (max-device-width: 768px) {
+
+    .NavLogo {
+        width: 15%;
+    }
+
+    .NavItens {
+        width: 85%;
+    }
+
+    /*HOME*/
+    .Card,
+    .ConteudoObjetivoTexto {
+        width: 80%;
+    }
+
+    .Card {
+        transition: 700ms ease-out;
+    }
+
+    .ConteudoObjetivoTextoConteudo {
+        text-align: justify;
+    }
+
+    /*HOME*/
+
+    /*COMISSÃO AVALIADORA*/
+    .ComissaoSection1 {
+        padding-bottom: 50px;
+    }
+
+    .ComissaoSection2 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .ConteudoComissao {
+        background-image: none;
+    }
+
+    .ComissaoSection1ConteudoDireitaTit {
+        font-size: 30px;
+    }
+
+    .ComissaoSection1ConteudoEsquerda,
+    article>h1 {
+        font-size: 16px;
+    }
+
+    .ComissaoSection1DiretorImg {
+        display: none;
+    }
+
+    .ComissaoSection2ConteudoTitulo {
+        margin-bottom: 30px;
+    }
+
+    /*COMISSÃO AVALIADORA*/
+
+    /*TERMOS E REGULAMENTAÇÕES*/
+    .container {
+        margin-top: -40%;
+    }
+
+    .RodapeTermos>.LinksRodape {
+        position: relative;
+        margin-top: 115%;
+    }
+
+    /*TERMOS E REGULAMENTAÇÕES*/
+}
+
+@media only screen and (max-device-width: 425px) {
+
+    .NavLogo {
+        display: none;
+    }
+
+    .NavItens {
+        text-align: center;
+        width: 100%;
+    }
+
+    /*HOME*/
+    .SubConteudo {
+        padding-left: 0%;
+        padding-right: 0.5em;
+    }
+
+    .ImgLogoCPA {
+        width: 70%;
+    }
+
+    .NumeroCard,
+    .bolinha {
+        display: none;
+    }
+
+    .TextoCard,
+    .TextoConteudoCard,
+    .SubConteudo,
+    .TituloCards {
+        text-align: justify;
+    }
+
+    .Card {
+        padding: 0%;
+        padding-bottom: 30px;
+        width: 100%;
+        transition: 700ms ease-out;
+    }
+
+    .ConteudoObjetivoTexto {
+        width: 100%;
+    }
+
+    .ConteudoObjetivoTextoListaItemTopicos {
+        padding: 0%;
+        padding-bottom: 30px;
+        font-weight: 600;
+    }
+
+    .ContatoRodapeChamada1Texto {
+        text-align: center;
+    }
+
+    .ContatoRodapeContainerInformacoes {
+        justify-content: center;
+        column-gap: 10px;
+        margin-left: 20px;
+    }
+
+    .ConteudoPontos,
+    .ConteudoCards {
+        padding-bottom: 10px;
+        padding-top: 50px;
+    }
+
+    .TOPICO {
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+
+    .ConteudoPontosTextoTopicosItem {
+        width: 100%;
+    }
+
+    .ConteudoPontosTextoTopicosItemTit {
+        font-size: 20px;
+    }
+
+    /*HOME*/
+
+    /*COMISSÃO AVALIADORA*/
+    .ComissaoSection1Conteudo {
+        flex-direction: column;
+    }
+
+    .ComissaoSection2ConteudoTituloTit {
+        padding-bottom: 0%;
+        text-align: center;
+    }
+
+    .Colunm-2 {
+        display: none;
+    }
+
+    figure.snip1113 {
+        margin: 0px;
+    }
+
+    /*COMISSÃO AVALIADORA*/
+
+    /*TERMOS E REGULAMENTAÇÕES*/
+    .container {
+        margin-top: -75%;
+    }
+
+    .RodapeTermos>.LinksRodape {
+        position: relative;
+        margin-top: 355%;
+    }
+
+    /*TERMOS E REGULAMENTAÇÕES*/
+}
+
+@media only screen and (max-device-width: 375px) {
+
+    /*TERMOS E REGULAMENTAÇÕES*/
+    .content {
+        padding: 1EM;
+    }
+
+    .container {
+        margin-top: -65%;
+    }
+
+    .RodapeTermos>.LinksRodape {
+        position: relative;
+        margin-top: 505%;
+    }
+
+    /*TERMOS E REGULAMENTAÇÕES*/
+}
+
+@media only screen and (max-device-width: 320px) {
+
+    /*TERMOS E REGULAMENTAÇÕES*/
+    .container {
+        margin-top: -85%;
+    }
+
+    .RodapeTermos>.LinksRodape {
+        position: relative;
+        margin-top: 655%;
+    }
+
+    /*TERMOS E REGULAMENTAÇÕES*/
+}
+
+.animated {
+    animation-play-state: running !important;
+}
+
+@keyframes pulse {}
