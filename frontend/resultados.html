@@ -1,34 +1,34 @@
 <!DOCTYPE html>
 <html lang="pt-BR" style="--sbw:17px;">
 
-<!--CONFIGURAÇÃO GERAL-->
+<!-- CONFIGURAÇÃO GERAL -->
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resultados C.P.A.</title>
     <meta name="description" content="Comissão Própria de Avaliação BPK">
 
-    <!--LINKS PARA O FAVICON -->
+    <!-- LINKS PARA O FAVICON -->
     <link rel="icon" href="https://diggontec.my.canva.site/cpabpk/ebca73bcf9b5efed3199bae9a36ad7bd.png" type="image/png"
         sizes="16x16">
     <link rel="icon" href="https://diggontec.my.canva.site/cpabpk/da6df92337b9a4a71cf3f414ae47a974.png" type="image/png"
         sizes="32x32">
     <link rel="apple-touch-icon" href="https://diggontec.my.canva.site/cpabpk/9cbc3db29cdef2322f6fbb8ea725fcf2.png"
         sizes="180x180">
-    <!--FIM DOS LINKS PARA O FAVICON-->
+    <!-- FIM DOS LINKS PARA O FAVICON -->
     
-    <!--LINKS PARA SCRIPT / BOOTSTRAP-->
+    <!-- LINKS PARA SCRIPT / BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/theme.css">
-    <!--FIM DOS LINKS PARA SCRIPT / BOOTSRAP-->
+    <!-- FIM DOS LINKS PARA SCRIPT / BOOTSRAP -->
 </head>
-<!--FIM DA CONFIGURAÇÃO GERAL-->
+<!-- FIM DA CONFIGURAÇÃO GERAL -->
 
 <body class="BodyMain">
     <div class="DivMain">
 
-        <!--HEADER PADRÃO DE TODAS AS PÁGINAS-->
+        <!-- HEADER PADRÃO DE TODAS AS PÁGINAS -->
         <div class="NavDiv">
             <nav class="NavMain">
                 <div class="NavLogo">
@@ -53,9 +53,9 @@
                 <div class="Linha2"></div>
             </div>
         </div>
-        <!--FIM DO HEADER PADRÃO DE TODAS AS PÁGINAS-->
+        <!-- FIM DO HEADER PADRÃO DE TODAS AS PÁGINAS -->
 
-        <!--CONTEÚDO DOS RESULTADOS-->
+        <!-- CONTEÚDO DOS RESULTADOS -->
         <div class="ConteudoComissao ResultadoSection">
             <div class="ComissaoSection1">
                 <div class="ComissaoSection1Conteudo">
@@ -85,29 +85,20 @@
                 <div class="ContatoRodapeContainerDivisoria"></div>
 
                 <div class="ComissaoSection1DiretorConteudoItens ComissaoSection1DiretorConteudoItensResultado">
-                    <picture>
-                        <img class="ImagemResultado" src="./assets/images/graficos/1.png" alt="Gráfico Colunas">
-                    </picture>
-                    <div class="ItensTitulo">
-                        Figura 1 - Índice de satisfação dos cursos ofertados pela instituição. 2021-2022
+                    <div class="graficos">
+                        <canvas id="grafico1"></canvas>
                     </div>
                 </div>
 
                 <div class="ComissaoSection1DiretorConteudoItens ComissaoSection1DiretorConteudoItensResultado">
-                    <picture>
-                        <img class="ImagemResultado" src="./assets/images/graficos/2.png" alt="Gráfico Colunas">
-                    </picture>
-                    <div class="ItensTitulo">
-                        Figura 2 - Índice de satisfação com a Instituição Biopark. 2021-2022
+                    <div class="graficos">
+                        <canvas id="grafico2"></canvas>
                     </div>
                 </div>
 
                 <div class="ComissaoSection1DiretorConteudoItens ComissaoSection1DiretorConteudoItensResultado">
-                    <picture>
-                        <img class="ImagemResultado" src="./assets/images/graficos/3.png" alt="Gráfico Colunas">
-                    </picture>
-                    <div class="ItensTitulo">
-                        Figura 3 - Índice de satisfação com a Infraestutura da instituição. 2021-2022
+                    <div class="graficos">
+                        <canvas id="grafico3"></canvas>
                     </div>
                 </div>
                 <div class="ContatoRodapeContainerDivisoria"></div>
@@ -120,9 +111,9 @@
             <br>
         </div>
 
-        <!--RODAPÉ PADRÃO DE TODAS AS PÁGINAS-->
+        <!-- RODAPÉ PADRÃO DE TODAS AS PÁGINAS -->
         <div class="Rodape">
-            <!--LINKS DE ACESSO-->
+            <!-- LINKS DE ACESSO -->
             <div class="LinksRodape">
                 <div class="itemlink">
                     <a class="LinkARodape" title="Facebook: biopark.edu" target="_blank"
@@ -140,9 +131,9 @@
                             src="./assets/images/sociais/YtBranco.png"></a>
                 </div>
             </div>
-            <!--FIM DOS LINKS DE ACESSO-->
+            <!-- FIM DOS LINKS DE ACESSO -->
 
-            <!--CONTATOS ADICIONAIS-->
+            <!-- CONTATOS ADICIONAIS -->
             <div class="ContatoRodape">
                 <div class="ContatoRodapeContainer">
                     <div class="ContatoRodapeChamada">
@@ -178,8 +169,15 @@
                     </div>
                 </div>
             </div>
-            <!--FIM DOS CONTATOS-->
+            <!-- FIM DOS CONTATOS -->
         </div>
+        <!-- SCRIPTS -->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="./scripts/resultados.js"></script>
+        <script src="./scripts/graficos/grafico1.js"></script>
+        <script src="./scripts/graficos/grafico2.js"></script>
+        <script src="./scripts/graficos/grafico3.js"></script>
+        <!-- FIM DOS SCRIPTS -->
 </body>
 
 </html>

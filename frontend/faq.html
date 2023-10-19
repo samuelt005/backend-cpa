@@ -1,355 +1,675 @@
 <!DOCTYPE html>
-<html lang="pt-BR" style="--sbw:17px;">
+<html lang="pt-BR" style="--sbw: 17px">
+    <!-- CONFIGURAÇÃO GERAL -->
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <!-- <base href="/cpabpk/"> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>FAQ C.P.A.</title>
+        <meta name="description" content="Comissão Própria de Avaliação BPK" />
 
-<!--CONFIGURAÇÃO GERAL-->
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><!--<base href="/cpabpk/">-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAQ C.P.A.</title>
-    <meta name="description" content="Comissão Própria de Avaliação BPK">
+        <!-- LINKS PARA O FAVICON -->
+        <link
+            rel="icon"
+            href="https://diggontec.my.canva.site/cpabpk/ebca73bcf9b5efed3199bae9a36ad7bd.png"
+            type="image/png"
+            sizes="16x16"
+        />
+        <link
+            rel="icon"
+            href="https://diggontec.my.canva.site/cpabpk/da6df92337b9a4a71cf3f414ae47a974.png"
+            type="image/png"
+            sizes="32x32"
+        />
+        <link
+            rel="apple-touch-icon"
+            href="https://diggontec.my.canva.site/cpabpk/9cbc3db29cdef2322f6fbb8ea725fcf2.png"
+            sizes="180x180"
+        />
+        <!-- FIM DOS LINKS PARA O FAVICON -->
 
-    <!--LINKS PARA O FAVICON -->
-    <link rel="icon" href="https://diggontec.my.canva.site/cpabpk/ebca73bcf9b5efed3199bae9a36ad7bd.png" type="image/png"
-        sizes="16x16">
-    <link rel="icon" href="https://diggontec.my.canva.site/cpabpk/da6df92337b9a4a71cf3f414ae47a974.png" type="image/png"
-        sizes="32x32">
-    <link rel="apple-touch-icon" href="https://diggontec.my.canva.site/cpabpk/9cbc3db29cdef2322f6fbb8ea725fcf2.png"
-        sizes="180x180">
-    <!--FIM DOS LINKS PARA O FAVICON-->
+        <!-- LINKS PARA SCRIPT / BOOTSTRAP -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="./assets/theme.css" />
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        />
+        <!-- FIM DOS LINKS PARA SCRIPT / BOOTSTRAP -->
+        <script
+            defer="defer"
+            charset="UTF-8"
+            src="https://bundle.notice.studio/index.js"
+        ></script>
+    </head>
+    <!-- FIM DA CONFIGURAÇÃO GERAL -->
 
-    <!--LINKS PARA SCRIPT / BOOTSTRAP-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/theme.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    <!--FIM DOS LINKS PARA SCRIPT / BOOTSTRAP-->
-    <script defer="defer" charset="UTF-8" src="https://bundle.notice.studio/index.js"></script>
-</head>
-<!--FIM DA CONFIGURAÇÃO GERAL-->
-
-<body class="BodyMain">
-    <div class="DivMain">
-
-        <!--HEADER PADRÃO DE TODAS AS PÁGINAS-->
-        <div class="NavDiv">
-            <nav class="NavMain">
-                <div class="NavLogo">
-                    <a class="NavLinkLogo">
-                        <img src="./assets/images/logos/1.png" width="130px">
-                    </a>
+    <body class="BodyMain">
+        <div class="DivMain">
+            <!-- HEADER PADRÃO DE TODAS AS PÁGINAS -->
+            <div class="NavDiv">
+                <nav class="NavMain">
+                    <div class="NavLogo">
+                        <a class="NavLinkLogo">
+                            <img
+                                src="./assets/images/logos/1.png"
+                                width="130px"
+                            />
+                        </a>
+                    </div>
+                    <div class="NavItens">
+                        <ul class="NavItenUl">
+                            <li class="NavItensLi">
+                                <a
+                                    class="NavLinkItens"
+                                    href="index.html"
+                                    style="text-decoration-line: none"
+                                    >Home</a
+                                >
+                            </li>
+                            <li class="NavItensLi">
+                                <a
+                                    class="NavLinkItens"
+                                    href="comissao-de-avaliacao.html"
+                                    style="text-decoration-line: none"
+                                    >Comissão Avaliadora</a
+                                >
+                            </li>
+                            <li class="NavItensLi">
+                                <a
+                                    class="NavLinkItens"
+                                    href="termos-regulamentacoes.html"
+                                    style="text-decoration-line: none"
+                                    >Termos e Regulamentações</a
+                                >
+                            </li>
+                            <li class="NavItensLi">
+                                <a
+                                    class="NavLinkItens"
+                                    href="resultados.html"
+                                    style="text-decoration-line: none"
+                                    >Resultados</a
+                                >
+                            </li>
+                            <li class="NavItensLi">
+                                <a
+                                    class="NavLinkItens PageSelected"
+                                    href=""
+                                    style="text-decoration-line: none"
+                                    >FAQ</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="Linhas">
+                    <div class="Linha1"></div>
+                    <div class="Linha2"></div>
                 </div>
-                <div class="NavItens">
-                    <ul class="NavItenUl">
-                        <li class="NavItensLi"><a class="NavLinkItens" href="index.html"
-                                style="text-decoration-line: none;">Home</a></li>
-                        <li class="NavItensLi"><a class="NavLinkItens" href="comissao-de-avaliacao.html"
-                                style="text-decoration-line: none;">Comissão
-                                Avaliadora</a></li>
-                        <li class="NavItensLi"><a class="NavLinkItens" href="termos-regulamentacoes.html"
-                                style="text-decoration-line: none;">Termos e
-                                Regulamentações</a></li>
-                        <li class="NavItensLi"><a class="NavLinkItens" href="resultados.html"
-                                style="text-decoration-line: none;">Resultados</a></li>
-                        <li class="NavItensLi"><a class="NavLinkItens PageSelected" href=""
-                                style="text-decoration-line: none;">FAQ</a></li>
-                    </ul>
+            </div>
+            <!-- FIM DO HEADER PADRÃO DE TODAS AS PÁGINAS -->
+
+            <!-- CONTEÚDO DO FAQ -->
+            <div class="ImgFaqSection ConteudoDivMain">
+                <div class="ComissaoSection1 FaqSection1">
+                    <!-- IMAGEM AUXILIAR -->
+                    <div class="DivImage1Faq">
+                        <img
+                            class="ImageFaq"
+                            src="./assets/images/background/bg-faq.png"
+                        />
+                    </div>
+                    <!-- FIM DA IMAGEM AUXILIAR -->
+
+                    <section class="faq-section">
+                        <div
+                            class="container"
+                            style="
+                                top: 0%;
+                                margin-top: 0px;
+                                position: relative;
+                                left: 0%;
+                            "
+                        >
+                            <div class="row" style="justify-content: center">
+                                <!-- INICIO DO FAQ -->
+                                <div class="col-md-6">
+                                    <div class="faq" id="accordion">
+                                        <!-- PERGUNTA UM -->
+                                        <div class="card">
+                                            <div
+                                                class="card-header"
+                                                id="faqHeading-1"
+                                            >
+                                                <div class="mb-0">
+                                                    <h5
+                                                        class="faq-title"
+                                                        data-toggle="collapse"
+                                                        data-target="#faqCollapse-1"
+                                                        data-aria-expanded="true"
+                                                        data-aria-controls="faqCollapse-1"
+                                                    >
+                                                        <span class="badge"
+                                                            >1</span
+                                                        >
+                                                        O que é a Comissão
+                                                        Própria Avaliativa (CPA)
+                                                        do Biopark Toledo e qual
+                                                        o seu papel?
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                            <div
+                                                id="faqCollapse-1"
+                                                class="collapse"
+                                                aria-labelledby="faqHeading-1"
+                                                data-parent="#accordion"
+                                            >
+                                                <div class="card-body">
+                                                    <p>
+                                                        A Comissão Própria
+                                                        Avaliativa (CPA) do
+                                                        Biopark Toledo é um
+                                                        órgão responsável pela
+                                                        avaliação interna da
+                                                        instituição em relação à
+                                                        qualidade de suas
+                                                        atividades e serviços.
+                                                        Seu papel é promover a
+                                                        autoavaliação
+                                                        institucional, buscando
+                                                        identificar pontos
+                                                        fortes e áreas que
+                                                        precisam de melhorias, a
+                                                        fim de contribuir para o
+                                                        aprimoramento contínuo
+                                                        do Biopark Toledo.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- PERGUNTA DOIS -->
+                                        <div class="card">
+                                            <div
+                                                class="card-header"
+                                                id="faqHeading-2"
+                                            >
+                                                <div class="mb-0">
+                                                    <h5
+                                                        class="faq-title"
+                                                        data-toggle="collapse"
+                                                        data-target="#faqCollapse-2"
+                                                        data-aria-expanded="false"
+                                                        data-aria-controls="faqCollapse-2"
+                                                    >
+                                                        <span class="badge"
+                                                            >2</span
+                                                        >
+                                                        Quais são os critérios
+                                                        utilizados pela CPA do
+                                                        Biopark Toledo?
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                            <div
+                                                id="faqCollapse-2"
+                                                class="collapse"
+                                                aria-labelledby="faqHeading-2"
+                                                data-parent="#accordion"
+                                            >
+                                                <div class="card-body">
+                                                    <p>
+                                                        A CPA do Biopark Toledo
+                                                        utiliza uma variedade de
+                                                        critérios para avaliar o
+                                                        desempenho e a qualidade
+                                                        das atividades
+                                                        desenvolvidas no local.
+                                                        Alguns dos critérios
+                                                        comuns incluem a
+                                                        satisfação dos usuários
+                                                        e clientes, a eficiência
+                                                        dos processos internos,
+                                                        a infraestrutura e
+                                                        recursos disponíveis, a
+                                                        capacitação dos
+                                                        colaboradores, a
+                                                        sustentabilidade
+                                                        ambiental e social, além
+                                                        do alinhamento com a
+                                                        missão e valores do
+                                                        Biopark.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- PERGUNTA TRÊS -->
+                                        <div class="card">
+                                            <div
+                                                class="card-header"
+                                                id="faqHeading-3"
+                                            >
+                                                <div class="mb-0">
+                                                    <h5
+                                                        class="faq-title"
+                                                        data-toggle="collapse"
+                                                        data-target="#faqCollapse-3"
+                                                        data-aria-expanded="false"
+                                                        data-aria-controls="faqCollapse-3"
+                                                    >
+                                                        <span class="badge"
+                                                            >3</span
+                                                        >
+                                                        Como posso participar ou
+                                                        contribuir com a CPA do
+                                                        Biopark Toledo?
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                            <div
+                                                id="faqCollapse-3"
+                                                class="collapse"
+                                                aria-labelledby="faqHeading-3"
+                                                data-parent="#accordion"
+                                            >
+                                                <div class="card-body">
+                                                    <p>
+                                                        Para participar ou
+                                                        contribuir com a CPA do
+                                                        Biopark Toledo, existem
+                                                        diferentes canais
+                                                        disponíveis. Os usuários
+                                                        e stakeholders podem
+                                                        enviar sugestões,
+                                                        críticas ou feedbacks
+                                                        por meio de formulários
+                                                        de avaliação, pesquisas
+                                                        de satisfação, caixas de
+                                                        sugestões localizadas
+                                                        nas dependências do
+                                                        Biopark, além de canais
+                                                        de comunicação online,
+                                                        como e-mails ou
+                                                        formulários de contato
+                                                        presentes no site
+                                                        oficial do Biopark.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- PERGUNTA QUATRO -->
+                                        <div class="card">
+                                            <div
+                                                class="card-header"
+                                                id="faqHeading-4"
+                                            >
+                                                <div class="mb-0">
+                                                    <h5
+                                                        class="faq-title"
+                                                        data-toggle="collapse"
+                                                        data-target="#faqCollapse-4"
+                                                        data-aria-expanded="false"
+                                                        data-aria-controls="faqCollapse-4"
+                                                    >
+                                                        <span class="badge"
+                                                            >4</span
+                                                        >
+                                                        Qual é a periodicidade
+                                                        das avaliações
+                                                        realizadas pela CPA do
+                                                        Biopark Toledo?
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                            <div
+                                                id="faqCollapse-4"
+                                                class="collapse"
+                                                aria-labelledby="faqHeading-4"
+                                                data-parent="#accordion"
+                                            >
+                                                <div class="card-body">
+                                                    <p>
+                                                        A periodicidade das
+                                                        avaliações realizadas
+                                                        pela CPA do Biopark
+                                                        Toledo pode variar de
+                                                        acordo com a programação
+                                                        estabelecida pela
+                                                        instituição.
+                                                        Normalmente, as
+                                                        avaliações são
+                                                        conduzidas de forma
+                                                        periódica, visando
+                                                        acompanhar e monitorar o
+                                                        desempenho e a qualidade
+                                                        das atividades do
+                                                        Biopark ao longo do
+                                                        tempo. Essa
+                                                        periodicidade pode ser
+                                                        anual, semestral ou
+                                                        definida de acordo com
+                                                        as necessidades e metas
+                                                        estabelecidas pela
+                                                        instituição.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- PERGUNTA CINCO -->
+                                        <div class="card">
+                                            <div
+                                                class="card-header"
+                                                id="faqHeading-5"
+                                            >
+                                                <div class="mb-0">
+                                                    <h5
+                                                        class="faq-title"
+                                                        data-toggle="collapse"
+                                                        data-target="#faqCollapse-5"
+                                                        data-aria-expanded="false"
+                                                        data-aria-controls="faqCollapse-5"
+                                                    >
+                                                        <span class="badge"
+                                                            >5</span
+                                                        >
+                                                        Quais são os benefícios
+                                                        da atuação da CPA do
+                                                        Biopark Toledo para a
+                                                        comunidade local?
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                            <div
+                                                id="faqCollapse-5"
+                                                class="collapse"
+                                                aria-labelledby="faqHeading-5"
+                                                data-parent="#accordion"
+                                            >
+                                                <div class="card-body">
+                                                    <p>
+                                                        A atuação da CPA do
+                                                        Biopark Toledo traz
+                                                        diversos benefícios para
+                                                        a comunidade local. Ao
+                                                        promover a avaliação
+                                                        interna e o
+                                                        aprimoramento contínuo
+                                                        do Biopark, a CPA
+                                                        contribui para a
+                                                        melhoria da qualidade
+                                                        dos serviços e
+                                                        atividades oferecidos
+                                                        pela instituição. Isso
+                                                        impacta positivamente a
+                                                        experiência dos usuários
+                                                        e clientes do Biopark,
+                                                        fortalece sua reputação
+                                                        e contribui para o
+                                                        desenvolvimento
+                                                        sustentável da região,
+                                                        gerando empregos,
+                                                        fomentando a economia
+                                                        local e estimulando a
+                                                        inovação.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- PERGUNTA SEIS -->
+                                        <div class="card">
+                                            <div
+                                                class="card-header"
+                                                id="faqHeading-6"
+                                            >
+                                                <div class="mb-0">
+                                                    <h5
+                                                        class="faq-title"
+                                                        data-toggle="collapse"
+                                                        data-target="#faqCollapse-6"
+                                                        data-aria-expanded="false"
+                                                        data-aria-controls="faqCollapse-6"
+                                                    >
+                                                        <span class="badge"
+                                                            >6</span
+                                                        >
+                                                        Quais são as medidas
+                                                        tomadas pela CPA do
+                                                        Biopark Toledo para
+                                                        garantir a transparência
+                                                        no processo?
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                            <div
+                                                id="faqCollapse-6"
+                                                class="collapse"
+                                                aria-labelledby="faqHeading-6"
+                                                data-parent="#accordion"
+                                            >
+                                                <div class="card-body">
+                                                    <p>
+                                                        A CPA do Biopark Toledo
+                                                        adota medidas para
+                                                        garantir a
+                                                        imparcialidade e
+                                                        transparência no
+                                                        processo de avaliação.
+                                                        Isso inclui a formação
+                                                        de uma equipe
+                                                        multidisciplinar e
+                                                        independente, composta
+                                                        por membros internos e
+                                                        externos ao Biopark.
+                                                        Além disso, são
+                                                        estabelecidos critérios
+                                                        claros e objetivos para
+                                                        a avaliação, de modo a
+                                                        evitar qualquer viés ou
+                                                        interferência indevida.
+                                                        Os resultados das
+                                                        avaliações são
+                                                        divulgados de forma
+                                                        transparente, permitindo
+                                                        que a comunidade tenha
+                                                        acesso às informações e
+                                                        compreenda os processos
+                                                        de avaliação realizados
+                                                        pela CPA.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- PERGUNTA SETE -->
+                                        <div class="card">
+                                            <div
+                                                class="card-header"
+                                                id="faqHeading-7"
+                                            >
+                                                <div class="mb-0">
+                                                    <h5
+                                                        class="faq-title"
+                                                        data-toggle="collapse"
+                                                        data-target="#faqCollapse-7"
+                                                        data-aria-expanded="false"
+                                                        data-aria-controls="faqCollapse-7"
+                                                    >
+                                                        <span class="badge"
+                                                            >7</span
+                                                        >
+                                                        Além da avaliação
+                                                        interna, a CPA também
+                                                        realiza alguma forma de
+                                                        avaliação externa?
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                            <div
+                                                id="faqCollapse-7"
+                                                class="collapse"
+                                                aria-labelledby="faqHeading-7"
+                                                data-parent="#accordion"
+                                            >
+                                                <div class="card-body">
+                                                    <p>
+                                                        Sim, a CPA do Biopark
+                                                        Toledo também realiza
+                                                        avaliações externas como
+                                                        parte de seu processo de
+                                                        avaliação. Essas
+                                                        avaliações envolvem a
+                                                        participação de
+                                                        especialistas e
+                                                        profissionais externos,
+                                                        que trazem uma visão
+                                                        imparcial e expertise
+                                                        nas áreas relevantes
+                                                        para a avaliação do
+                                                        Biopark. A avaliação
+                                                        externa complementa a
+                                                        avaliação interna
+                                                        realizada pela CPA,
+                                                        oferecendo uma
+                                                        perspectiva externa e
+                                                        enriquecendo o processo
+                                                        de autoavaliação
+                                                        institucional. Isso
+                                                        contribui para a
+                                                        credibilidade e
+                                                        confiabilidade do
+                                                        processo de avaliação do
+                                                        Biopark Toledo.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- FIM DO FAQ -->
+                            </div>
+                        </div>
+                    </section>
                 </div>
-            </nav>
-            <div class="Linhas">
-                <div class="Linha1"></div>
-                <div class="Linha2"></div>
+
+                <!-- RODAPÉ PADRÃO DE TODAS AS PÁGINAS -->
+                <div class="Rodape">
+                    <!-- LINKS DE ACESSO -->
+                    <div class="LinksRodape">
+                        <div class="itemlink">
+                            <a
+                                class="LinkARodape"
+                                title="Facebook: biopark.edu"
+                                target="_blank"
+                                href="https://www.facebook.com/biopark.edu"
+                                ><img
+                                    class="itemlinkimg face"
+                                    src="./assets/images/sociais/FcBranco.png"
+                            /></a>
+                        </div>
+                        <div class="itemlink">
+                            <a
+                                class="LinkARodape"
+                                title="Instagram: biopark_edu"
+                                target="_blank"
+                                href="https://www.instagram.com/biopark_edu/"
+                                ><img
+                                    class="itemlinkimg insta"
+                                    src="./assets/images/sociais/IgBranco.png"
+                            /></a>
+                        </div>
+                        <div class="itemlink">
+                            <a
+                                class="LinkARodape"
+                                title="Youtube: @Bioparkecossistema"
+                                target="_blank"
+                                href="https://www.youtube.com/@Bioparkecossistema"
+                                ><img
+                                    class="itemlinkimg youtube"
+                                    src="./assets/images/sociais/YtBranco.png"
+                            /></a>
+                        </div>
+                    </div>
+                    <!-- FIM DOS LINKS DE ACESSO -->
+
+                    <!-- CONTATOS ADICIONAIS -->
+                    <div class="ContatoRodape">
+                        <div class="ContatoRodapeContainer">
+                            <div class="ContatoRodapeChamada">
+                                <div class="ContatoRodapeChamada1">
+                                    <div class="ContatoRodapeChamada1Texto">
+                                        Junte-se à nossa comunidade e responda
+                                        as questões.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="ContatoRodapeContainerDivisoria"></div>
+
+                            <div class="ContatoRodapeContainerInformacoes">
+                                <div
+                                    class="ContatoRodapeContainerInformacoesColuna"
+                                >
+                                    <div class="LogoFooter">
+                                        <img
+                                            class="LogoFooterImg"
+                                            src="./assets/images/logos/BPLogoBranca.png"
+                                        />
+                                    </div>
+                                    <div class="IgFooter">©biopark_edu</div>
+                                </div>
+                                <div
+                                    class="ContatoRodapeContainerInformacoesColuna"
+                                >
+                                    <div
+                                        class="ContatoRodapeContainerInformacoesColunaTitulo"
+                                    >
+                                        Informações
+                                    </div>
+                                    <div
+                                        class="ContatoRodapeContainerInformacoesColunaEndereco"
+                                    >
+                                        Rodovia estadual, PR-182 - conexão com
+                                        BR - 163. Toledo | Paraná | Brasil
+                                    </div>
+                                    <div
+                                        class="ContatoRodapeContainerInformacoesColunaContato"
+                                    >
+                                        +55 45 2036 3601
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- FIM DOS CONTATOS ADICIONAIS -->
+                </div>
+                <!-- FIM DO RODAPÉ PADRÃO -->
             </div>
         </div>
-        <!--FIM DO HEADER PADRÃO DE TODAS AS PÁGINAS-->
 
-        <!--CONTEÚDO DO FAQ-->
-        <div class="ImgFaqSection ConteudoDivMain">
-            <div class="ComissaoSection1 FaqSection1">
-                <!--IMAGEM AUXILIAR-->
-                <div class="DivImage1Faq">
-                    <img class="ImageFaq" src="./assets/images/background/bg-faq.png">
-                </div>
-                <!--FIM DA IMAGEM AUXILIAR-->
+        <!-- LINK ADICIONAIS PARA SCRIPT BOOTSTRAP -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+            integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+            integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+            crossorigin="anonymous"
+        ></script>
 
-                <section class="faq-section">
-                    <div class="container" style="top: 0%; margin-top: 0px; position: relative; left: 0%;">
-                        <div class="row" style="justify-content: center;">
-                            <!--INICIO DO FAQ-->
-                            <div class="col-md-6">
-                                <div class="faq" id="accordion">
-                                    <!--PERGUNTA UM-->
-                                    <div class="card">
-                                        <div class="card-header" id="faqHeading-1">
-                                            <div class="mb-0">
-                                                <h5 class="faq-title" data-toggle="collapse"
-                                                    data-target="#faqCollapse-1" data-aria-expanded="true"
-                                                    data-aria-controls="faqCollapse-1">
-                                                    <span class="badge">1</span> O que é a Comissão Própria Avaliativa
-                                                    (CPA) do Biopark Toledo e qual o seu papel?
-                                                </h5>
-                                            </div>
-                                        </div>
-                                        <div id="faqCollapse-1" class="collapse" aria-labelledby="faqHeading-1"
-                                            data-parent="#accordion">
-                                            <div class="card-body">
-                                                <p>A Comissão Própria Avaliativa (CPA) do Biopark Toledo é um órgão
-                                                    responsável pela avaliação interna da instituição
-                                                    em relação à qualidade de suas atividades e serviços. Seu papel é
-                                                    promover a autoavaliação institucional, buscando
-                                                    identificar pontos fortes e áreas que precisam de melhorias, a fim
-                                                    de contribuir para o aprimoramento contínuo do
-                                                    Biopark Toledo. </p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!--PERGUNTA DOIS-->
-                                    <div class="card">
-                                        <div class="card-header" id="faqHeading-2">
-                                            <div class="mb-0">
-                                                <h5 class="faq-title" data-toggle="collapse"
-                                                    data-target="#faqCollapse-2" data-aria-expanded="false"
-                                                    data-aria-controls="faqCollapse-2">
-                                                    <span class="badge">2</span> Quais são os critérios utilizados pela
-                                                    CPA do Biopark Toledo?
-                                                </h5>
-                                            </div>
-                                        </div>
-                                        <div id="faqCollapse-2" class="collapse" aria-labelledby="faqHeading-2"
-                                            data-parent="#accordion">
-                                            <div class="card-body">
-                                                <p>A CPA do Biopark Toledo utiliza uma variedade de critérios para
-                                                    avaliar o desempenho e a qualidade das atividades
-                                                    desenvolvidas no local. Alguns dos critérios comuns incluem a
-                                                    satisfação dos usuários e clientes, a eficiência
-                                                    dos processos internos, a infraestrutura e recursos disponíveis, a
-                                                    capacitação dos colaboradores, a sustentabilidade
-                                                    ambiental e social, além do alinhamento com a missão e valores do
-                                                    Biopark.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!--PERGUNTA TRÊS-->
-                                    <div class="card">
-                                        <div class="card-header" id="faqHeading-3">
-                                            <div class="mb-0">
-                                                <h5 class="faq-title" data-toggle="collapse"
-                                                    data-target="#faqCollapse-3" data-aria-expanded="false"
-                                                    data-aria-controls="faqCollapse-3">
-                                                    <span class="badge">3</span> Como posso participar ou contribuir com
-                                                    a CPA do Biopark Toledo?
-                                                </h5>
-                                            </div>
-                                        </div>
-                                        <div id="faqCollapse-3" class="collapse" aria-labelledby="faqHeading-3"
-                                            data-parent="#accordion">
-                                            <div class="card-body">
-                                                <p>Para participar ou contribuir com a CPA do Biopark Toledo, existem
-                                                    diferentes canais disponíveis. Os usuários e stakeholders
-                                                    podem enviar sugestões, críticas ou feedbacks por meio de
-                                                    formulários de avaliação, pesquisas de satisfação,
-                                                    caixas de sugestões localizadas nas dependências do Biopark, além de
-                                                    canais de comunicação online, como e-mails ou
-                                                    formulários de contato presentes no site oficial do Biopark. </p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!--PERGUNTA QUATRO-->
-                                    <div class="card">
-                                        <div class="card-header" id="faqHeading-4">
-                                            <div class="mb-0">
-                                                <h5 class="faq-title" data-toggle="collapse"
-                                                    data-target="#faqCollapse-4" data-aria-expanded="false"
-                                                    data-aria-controls="faqCollapse-4">
-                                                    <span class="badge">4</span> Qual é a periodicidade das avaliações
-                                                    realizadas pela CPA do Biopark Toledo?
-                                                </h5>
-                                            </div>
-                                        </div>
-                                        <div id="faqCollapse-4" class="collapse" aria-labelledby="faqHeading-4"
-                                            data-parent="#accordion">
-                                            <div class="card-body">
-                                                <p>A periodicidade das avaliações realizadas pela CPA do Biopark Toledo
-                                                    pode variar de acordo com a programação
-                                                    estabelecida pela instituição. Normalmente, as avaliações são
-                                                    conduzidas de forma periódica, visando acompanhar e
-                                                    monitorar o desempenho e a qualidade das atividades do Biopark ao
-                                                    longo do tempo. Essa periodicidade pode ser anual,
-                                                    semestral ou definida de acordo com as necessidades e metas
-                                                    estabelecidas pela instituição.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!--PERGUNTA CINCO-->
-                                    <div class="card">
-                                        <div class="card-header" id="faqHeading-5">
-                                            <div class="mb-0">
-                                                <h5 class="faq-title" data-toggle="collapse"
-                                                    data-target="#faqCollapse-5" data-aria-expanded="false"
-                                                    data-aria-controls="faqCollapse-5">
-                                                    <span class="badge">5</span> Quais são os benefícios da atuação da
-                                                    CPA do Biopark Toledo para a comunidade local?
-                                                </h5>
-                                            </div>
-                                        </div>
-                                        <div id="faqCollapse-5" class="collapse" aria-labelledby="faqHeading-5"
-                                            data-parent="#accordion">
-                                            <div class="card-body">
-                                                <p> A atuação da CPA do Biopark Toledo traz diversos benefícios para a
-                                                    comunidade local. Ao promover a avaliação interna e
-                                                    o aprimoramento contínuo do Biopark, a CPA contribui para a melhoria
-                                                    da qualidade dos serviços e atividades oferecidos
-                                                    pela instituição. Isso impacta positivamente a experiência dos
-                                                    usuários e clientes do Biopark, fortalece sua reputação e
-                                                    contribui para o desenvolvimento sustentável da região, gerando
-                                                    empregos, fomentando a economia local e estimulando a inovação.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!--PERGUNTA SEIS-->
-                                    <div class="card">
-                                        <div class="card-header" id="faqHeading-6">
-                                            <div class="mb-0">
-                                                <h5 class="faq-title" data-toggle="collapse"
-                                                    data-target="#faqCollapse-6" data-aria-expanded="false"
-                                                    data-aria-controls="faqCollapse-6">
-                                                    <span class="badge">6</span> Quais são as medidas tomadas pela CPA
-                                                    do Biopark Toledo para garantir a transparência no processo?
-                                                </h5>
-                                            </div>
-                                        </div>
-                                        <div id="faqCollapse-6" class="collapse" aria-labelledby="faqHeading-6"
-                                            data-parent="#accordion">
-                                            <div class="card-body">
-                                                <p>A CPA do Biopark Toledo adota medidas para garantir a imparcialidade
-                                                    e transparência no processo de avaliação. Isso inclui
-                                                    a formação de uma equipe multidisciplinar e independente, composta
-                                                    por membros internos e externos ao Biopark. Além disso,
-                                                    são estabelecidos critérios claros e objetivos para a avaliação, de
-                                                    modo a evitar qualquer viés ou interferência indevida.
-                                                    Os resultados das avaliações são divulgados de forma transparente,
-                                                    permitindo que a comunidade tenha acesso às informações e
-                                                    compreenda os processos de avaliação realizados pela CPA.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!--PERGUNTA SETE-->
-                                    <div class="card">
-                                        <div class="card-header" id="faqHeading-7">
-                                            <div class="mb-0">
-                                                <h5 class="faq-title" data-toggle="collapse"
-                                                    data-target="#faqCollapse-7" data-aria-expanded="false"
-                                                    data-aria-controls="faqCollapse-7">
-                                                    <span class="badge">7</span> Além da avaliação interna, a CPA também
-                                                    realiza alguma forma de avaliação externa?
-                                                </h5>
-                                            </div>
-                                        </div>
-                                        <div id="faqCollapse-7" class="collapse" aria-labelledby="faqHeading-7"
-                                            data-parent="#accordion">
-                                            <div class="card-body">
-                                                <p>Sim, a CPA do Biopark Toledo também realiza avaliações externas como
-                                                    parte de seu processo de avaliação. Essas avaliações envolvem
-                                                    a participação de especialistas e profissionais externos, que trazem
-                                                    uma visão imparcial e expertise nas áreas
-                                                    relevantes para a avaliação do Biopark. A avaliação externa
-                                                    complementa a avaliação interna realizada pela CPA,
-                                                    oferecendo uma perspectiva externa e enriquecendo o processo de
-                                                    autoavaliação institucional. Isso contribui para a
-                                                    credibilidade e confiabilidade do processo de avaliação do Biopark
-                                                    Toledo.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--FIM DO FAQ-->
-                        </div>
-                    </div>
-                </section>
-            </div>
-
-            <!--RODAPÉ PADRÃO DE TODAS AS PÁGINAS-->
-            <div class="Rodape">
-                 <!--LINKS DE ACESSO-->
-                <div class="LinksRodape">
-                    <div class="itemlink">
-                        <a class="LinkARodape" title="Facebook: biopark.edu" target="_blank"
-                            href="https://www.facebook.com/biopark.edu"><img class="itemlinkimg face"
-                                src="./assets/images/sociais/FcBranco.png"></a>
-                    </div>
-                    <div class="itemlink">
-                        <a class="LinkARodape" title="Instagram: biopark_edu" target="_blank"
-                            href="https://www.instagram.com/biopark_edu/"><img class="itemlinkimg insta"
-                                src="./assets/images/sociais/IgBranco.png"></a>
-                    </div>
-                    <div class="itemlink">
-                        <a class="LinkARodape" title="Youtube: @Bioparkecossistema" target="_blank"
-                            href="https://www.youtube.com/@Bioparkecossistema"><img class="itemlinkimg youtube"
-                                src="./assets/images/sociais/YtBranco.png"></a>
-                    </div>
-                </div>
-                <!--FIM DOS LINKS DE ACESSO-->
-
-                <!--CONTATOS ADICIONAIS-->
-                <div class="ContatoRodape">
-                    <div class="ContatoRodapeContainer">
-                        <div class="ContatoRodapeChamada">
-                            <div class="ContatoRodapeChamada1">
-                                <div class="ContatoRodapeChamada1Texto">
-                                    Junte-se à nossa comunidade e responda as questões.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="ContatoRodapeContainerDivisoria"></div>
-
-                        <div class="ContatoRodapeContainerInformacoes">
-                            <div class="ContatoRodapeContainerInformacoesColuna">
-                                <div class="LogoFooter">
-                                    <img class="LogoFooterImg" src="./assets/images/logos/BPLogoBranca.png">
-                                </div>
-                                <div class="IgFooter">
-                                    ©biopark_edu
-                                </div>
-                            </div>
-                            <div class="ContatoRodapeContainerInformacoesColuna">
-                                <div class="ContatoRodapeContainerInformacoesColunaTitulo">
-                                    Informações
-                                </div>
-                                <div class="ContatoRodapeContainerInformacoesColunaEndereco">
-                                    Rodovia estadual, PR-182 - conexão com BR - 163. Toledo | Paraná | Brasil
-                                </div>
-                                <div class="ContatoRodapeContainerInformacoesColunaContato">
-                                    +55 45 2036 3601
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--FIM DOS CONTATOS ADICIONAIS-->
-            </div>
-            <!--FIM DO RODAPÉ PADRÃO-->
-        </div>
-    </div>
-
-    <!--LINK ADICIONAIS PARA SCRIPT BOOTSTRAP-->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
-        </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
-        </script>
-
-    <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-    <!--FIM DOS LINKS ADICIONAIS-->
-    
-</body>
-
+        <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+        <!-- FIM DOS LINKS ADICIONAIS -->
+    </body>
 </html>

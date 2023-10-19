@@ -757,6 +757,11 @@ body {
     background-color: #f9f9fb;
 }
 
+.graficos {
+    height: 400px;
+    width: 800px;
+}
+
 .ItensIcon {
     min-width: 56px;
     min-height: 56px;
