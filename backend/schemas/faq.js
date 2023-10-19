@@ -4,6 +4,11 @@ export default {
     title: 'FAQ',
     fields: [
         {
+            name: 'ordem',
+            type: 'number',
+            title: 'Ordem'
+        },
+        {
             name: 'pergunta',
             type: 'string',
             title: 'Pergunta'
