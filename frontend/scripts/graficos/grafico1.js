@@ -1,4 +1,7 @@
 const grafico1 = document.getElementById("grafico1");
+const queryUrlGrafico1 =
+    queryUrlBase +
+    "grafico1%27%5D+%7B%0A++ano%2C%0A++curso%2C%0A++porcentagem%0A%7D+%0A%7C+order%28ano+asc%29+%7C+order%28curso+asc%29";
 
 const options1 = {
     scales: {
@@ -32,25 +35,10 @@ const options1 = {
 
 let dataObjects1 = [];
 
-// Função para os dados do gráfico 1
-async function getChartData() {
-    try {
-        let querryResult = await fetch(
-            "https://a0mbefrv.api.sanity.io/v2021-10-21/data/query/production?query=*%5B_type+%3D%3D+%27grafico1%27%5D"
-        );
-        let resultObject = await querryResult.json();
-        let chartData = resultObject.result;
-        return chartData;
-    } catch (error) {
-        console.log(error);
-        throw error;
-    }
-}
-
 // Função para atribuir os dados do gráfico 1
 async function setChartData() {
     try {
-        let chartData = await getChartData();
+        let chartData = await query(queryUrlGrafico1);
         chartData.forEach((data) => {
             dataObjects1.push({
                 course: data.curso,
@@ -58,14 +46,6 @@ async function setChartData() {
                 percent: data.porcentagem,
             });
         });
-        dataObjects1.sort((a, b) => {
-            if (a.course < b.course) return -1;
-            if (a.course > b.course) return 1;
-
-            if (a.year < b.year) return -1;
-            if (a.year > b.year) return 1;
-        });
-        console.log(dataObjects1);
     } catch (error) {
         console.log(error);
     }

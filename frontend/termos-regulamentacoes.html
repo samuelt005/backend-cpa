@@ -66,24 +66,6 @@
         }
     </style>
     <!-- FIM DA FORMATAÇÃO -->
-
-    <!-- SCRIPT PARA A MUDANÇA DE TAB -->
-    <script>
-        function openTab(evt, tabName) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-            document.getElementById(tabName).style.display = "block";
-            evt.currentTarget.className += " active";
-        }
-    </script>
-    <!-- FIM DO SCRIPT -->
 </head>
 <!-- FIM DA CONFIGURAÇÃO GERAL -->
 
@@ -122,9 +104,9 @@
             <!-- MENU DOS TERMOS -->
             <nav class="menu">
                 <ul class="main-menu">
-                    <li onclick="openTab(event, 'tab1')" class="tablinks" id="defaultOpen"><i
+                    <li class="tablinks tab1Button" id="defaultOpen"><i
                             class="fa fa-home"></i>Estatuto C.P.A.</li>
-                    <li onclick="openTab(event, 'tab3')" class="tablinks"><i class="fa fa-user"></i>Pilares dos IES no
+                    <li class="tablinks tab2Button"><i class="fa fa-user"></i>Pilares dos IES no
                         SINAES</li>
                 </ul>
             </nav>
@@ -132,67 +114,8 @@
 
             <!-- ASSUNTO DOS TERMOS -->
             <article id="tab1" class="tabcontent">
-                <h1>Estatuto C.P.A.</h1>
-                <div class="content">
-                    <p>
-                        A Comissão Própria de Avaliação (CPA) está prevista na Lei Nº 10.861, de 14/04/2004, que
-                        instituiu o Sistema
-                        Nacional de Avaliação da Educação Superior (SINAES). Ela tem como objetivo assegurar a
-                        participação do corpo
-                        discente, docente, técnico-administrativo e da sociedade civil nas avaliações das instituiçõesde
-                        educação
-                        superior.
-                    </p>
-                </div>
-
-                <h1>Conteúdo avaliado</h1>
-                <div class="content">
-                    <p>
-                        CPA avalia diversas dimensões institucionais, que estão definidas no Sistema Nacional de
-                        Avaliação da
-                        Educação Superior (SINAES). Essas dimensões abrangem aspectos como missão e plano de
-                        desenvolvimento
-                        institucional, políticas para o ensino, pesquisa e extensão, responsabilidade social,
-                        comunicação com a
-                        sociedade, políticas de pessoal, organização e gestão da instituição, infraestrutura física,
-                        planejamento e
-                        avaliação, políticas de atendimento ao estudante e sustentabilidade financeira.
-                    </p>
-                </div>
-                <h1>Importância em Avaliar</h1>
-                <div class="content">
-                    <p>
-                        A avaliação realizada pela CPA é fundamental para que a instituição de ensino superior
-                        obtenha
-                        conhecimento
-                        sobre sua própria realidade, identifique seus pontos fortes e fragilidades e promova
-                        melhorias
-                        contínuas em
-                        busca da qualidade educativa e da relevância social. A partir das informações obtidas, a
-                        instituição pode
-                        desenvolver ações de aperfeiçoamento e aprimorar seus processos internos, visando
-                        proporcionar
-                        uma educação de
-                        qualidade e atender às demandas da sociedade.
-                    </p>
-                </div>
             </article>
-            <article id="tab3" class="tabcontent">
-                <h1>Pilares dos IES no SINAES</h1>
-                <div class="content">
-                    <p>
-                        A avaliação das instituições de educação superior no SINAES é baseada em três pilares:
-                    <ol>
-                        <li>Avaliação interna (autoavaliação), realizada pela CPA;</li>
-                        <li>Avaliação externa, realizada por comissões de avaliação in loco designadas pelo Instituto
-                            Nacional de
-                            Estudos e Pesquisas Educacionais Anísio Teixeira (INEP);</li>
-                        <li>Avaliação do desempenho dos estudantes, realizada por meio do Exame Nacional de Desempenho
-                            dos Estudantes
-                            (ENADE).</li>
-                    </ol>
-                    </p>
-                </div>
+            <article id="tab2" class="tabcontent">
             </article>
             <!-- FIM DO ASSUNTO DOS TERMOS -->
         </div>
@@ -261,11 +184,11 @@
     </div>
     <!-- FIM DOS RODAPÉ PADRÃO -->
 
-    <!-- SCRIPT DE AUXILIO -->
-    <script>
-        document.getElementById("defaultOpen").click();
-    </script>
-    <!-- FIM DO SCRIPT DE AUXILIO -->
+    <!-- SCRIPTS -->
+    <script src="./scripts/tabs.js"></script>
+    <script src="./scripts/query.js"></script>
+    <script src="./scripts/termos.js"></script>
+    <!-- FIM DOS SCRIPTS -->
 </body>
 
 </html>

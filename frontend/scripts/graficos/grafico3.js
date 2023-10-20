@@ -1,4 +1,7 @@
 const grafico3 = document.getElementById("grafico3");
+const queryUrlGrafico3 =
+    queryUrlBase +
+    "grafico3%27%5D+%7B%0A++ano%2C%0A++comodo%2C%0A++porcentagem%0A%7D+%0A%7C+order%28ano+asc%29+%7C+order%28comodo+asc%29";
 
 const options3 = {
     scales: {
@@ -39,38 +42,16 @@ function colorForYear(year) {
     return year % 2 === 0 ? evenColor : oddColor;
 }
 
-// Função para os dados do gráfico 3
-async function getChartData() {
-    try {
-        let querryResult = await fetch(
-            "https://a0mbefrv.api.sanity.io/v2021-10-21/data/query/production?query=*%5B_type+%3D%3D+%27grafico3%27%5D"
-        );
-        let resultObject = await querryResult.json();
-        let chartData = resultObject.result;
-        return chartData;
-    } catch (error) {
-        console.log(error);
-        throw error;
-    }
-}
-
 // Função para atribuir os dados do gráfico 3
 async function setChartData() {
     try {
-        let chartData = await getChartData();
+        let chartData = await query(queryUrlGrafico3);
         chartData.forEach((data) => {
             dataObjects3.push({
                 room: data.comodo,
                 year: data.ano,
                 percent: data.porcentagem,
             });
-        });
-        dataObjects3.sort((a, b) => {
-            if (a.room < b.room) return -1;
-            if (a.room > b.room) return 1;
-
-            if (a.year < b.year) return -1;
-            if (a.year > b.year) return 1;
         });
     } catch (error) {
         console.log(error);

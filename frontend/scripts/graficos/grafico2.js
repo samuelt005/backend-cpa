@@ -1,4 +1,7 @@
 const grafico2 = document.getElementById("grafico2");
+const queryUrlGrafico2 =
+    queryUrlBase +
+    "grafico2%27%5D+%7B%0A++ano%2C%0A++porcentagem%0A%7D+%0A%7C+order%28ano+desc%29";
 
 const options2 = {
     scales: {
@@ -47,25 +50,10 @@ let data2 = {
     ],
 };
 
-// Função para os dados do gráfico 2
-async function getChartData() {
-    try {
-        let querryResult = await fetch(
-            "https://a0mbefrv.api.sanity.io/v2021-10-21/data/query/production?query=*%5B_type+%3D%3D+%27grafico2%27%5D"
-        );
-        let resultObject = await querryResult.json();
-        let chartData = resultObject.result;
-        return chartData;
-    } catch (error) {
-        console.log(error);
-        throw error;
-    }
-}
-
 // Função para atribuir os dados do gráfico 2
 async function setChartData() {
     try {
-        let chartData = await getChartData();
+        let chartData = await query(queryUrlGrafico2);
         chartData.forEach((data) => {
             let labelData = data.ano.toString();
             let graphData = data.porcentagem.toString();
