@@ -1,0 +1,25 @@
+.NavItensLi:nth-child(4) a {
+	color: #eb0045;
+}
+
+.ResultadoSection {
+	background-image: url();
+	background-color: #f1f1f1;
+}
+
+.ComissaoSection1ConteudoDireitaTitResultado {
+	text-align: left;
+}
+
+.ComissaoSection1ConteudoEsquerdaResultado {
+	display: flex;
+	align-items: flex-end;
+}
+
+.ImagemResultado {
+	width: 100%;
+}
+
+.ComissaoSection1DiretorConteudoItensResultado {
+	flex-direction: column;
+}

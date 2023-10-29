@@ -1,0 +1,43 @@
+.NavItensLi:nth-child(3) a {
+	color: #eb0045;
+}
+
+body {
+  background: linear-gradient(#2a363f,
+      #2a363f var(--line-offset),
+      #dedede var(--line-offset));
+  height: 100vh;
+  color: #878787;
+  --menu-item-size: 50px;
+  --green-color: #EB0045;
+  --blue-color: #c40b43;
+  --dark-green-color: #a70636;
+  --white-color: #FFF;
+  --gray-color: #EDEDED;
+  --container-width: 700px;
+  --container-height: 400px;
+  --line-offset: calc((100% - var(--container-height))/ 2 + var(--menu-item-size) + 0.6em);
+}
+
+@media only screen and (max-device-width: 1024px) {
+  body {
+    background: none;
+    background-color: #dedede;
+  }
+}
+
+article {
+  background: var(--gray-color);
+  padding: 1em;
+  border-radius: 0 0 5px 5px;
+  box-shadow: 5px 5px 5px #CCC;
+  position: relative;
+}
+
+h1 {
+  font-size: 115%;
+  margin: 1em 2em;
+  padding: 0;
+  position: relative;
+  color: #777;
+}
